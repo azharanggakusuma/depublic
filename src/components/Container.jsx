@@ -3,7 +3,7 @@
 import React from "react";
 
 function Container({ children }) {
-  return <div className="w-486 mx-auto">{children}</div>;
+  return <div className="w-485 mx-auto">{children}</div>;
 }
 
 export default Container;
