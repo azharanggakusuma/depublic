@@ -16,7 +16,7 @@ function Navbar() {
           </button>
           <button className="bg-primary-700 border hover:bg-primary-500 transition duration-300 border-primary-500 text-white text-sm font-semibold px-4 py-2 rounded-lg">
             Sign Up
-          </button>
+          </button> 
         </div>
       </div>
     </header>
