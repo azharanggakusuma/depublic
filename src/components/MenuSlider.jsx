@@ -68,4 +68,4 @@ const MenuSlider = () => {
   );
 };
 
-export default MenuSlider;
+export default MenuSlider; 
