@@ -3,7 +3,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import HeroImage from "../assets/img/hero.png";
-import MenuSlider from "./MenuSlider";
+import MenuSlider from "./MenuSlider"; 
 
 function Hero() {
   return (
