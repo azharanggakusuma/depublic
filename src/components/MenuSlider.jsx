@@ -1,5 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -27,16 +25,41 @@ const MenuSlider = () => {
   };
 
   const menuItems = [
-    { image: imageTicket, label: "Ticket", width: "60px", height: "50px" },
+    {
+      image: imageTicket,
+      label: "Ticket",
+      link: "/ticket",
+      width: "70px",
+      height: "50px",
+    },
     {
       image: imageRegistration,
       label: "Registration",
-      width: "50px",
+      link: "/registration",
+      width: "45px",
       height: "70px",
     },
-    { image: imageBooking, label: "Booking", width: "50px", height: "50px" },
-    { image: imageStore, label: "Store", width: "50px", height: "50px" },
-    { image: imageStore, label: "Lorem", width: "50px", height: "50px" },
+    {
+      image: imageBooking,
+      label: "Booking",
+      link: "/booking",
+      width: "50px",
+      height: "50px",
+    },
+    {
+      image: imageStore,
+      label: "Store",
+      link: "/store",
+      width: "60px",
+      height: "50px",
+    },
+    {
+      image: imageStore,
+      label: "Lorem",
+      link: "/lorem",
+      width: "50px",
+      height: "50px",
+    },
   ];
 
   return (
@@ -44,23 +67,29 @@ const MenuSlider = () => {
       <Slider {...settings}>
         {menuItems.map((item, index) => (
           <div key={index} className="text-center">
-            <div className="flex flex-col items-center">
-              <div
-                className="mb-2"
-                style={{
-                  width: item.width,
-                  height: item.height,
-                  marginTop: item.label === "Registration" ? "0" : "20px",
-                }}
-              >
-                <img
-                  src={item.image}
-                  alt={item.label}
-                  style={{ width: "100%", height: "100%" }}
-                />
+            <a href={item.link} className="block">
+              <div className="flex flex-col items-center transform hover:scale-105 transition-transform">
+                <div
+                  className="mb-2"
+                  style={{
+                    width: item.width,
+                    height: item.height,
+                    marginTop: item.label === "Registration" ? "0" : "20px",
+                  }}
+                >
+                  <img
+                    src={item.image}
+                    alt={item.label}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                    }}
+                    className="hover:opacity-75"
+                  />
+                </div>
+                <p className="text-sm">{item.label}</p>
               </div>
-              <p className="text-sm">{item.label}</p>
-            </div>
+            </a>
           </div>
         ))}
       </Slider>
@@ -68,4 +97,4 @@ const MenuSlider = () => {
   );
 };
 
-export default MenuSlider; 
+export default MenuSlider;

@@ -37,8 +37,7 @@ function Hero() {
           />
         </div>
       </div>
-
-      {/* Menu Slider */}
+      
       <div className="-mt-16 relative mb-20">
         <MenuSlider />
       </div>
