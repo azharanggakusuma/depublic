@@ -11,6 +11,7 @@ export default {
         montserrat: ["Montserrat", "sans"],
       },
       width: {
+        container: "500px",
         485: "485px",
         450: "450px",
         "hero-image": "600px",

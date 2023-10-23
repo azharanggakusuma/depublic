@@ -3,7 +3,6 @@ import react from "react";
 import Navbar from "./Navbar";
 import Container from "./Container";
 import Hero from "./Hero";
-import MenuSlider from "./MenuSlider";
 
 function Home() {
   return (
@@ -12,10 +11,6 @@ function Home() {
 
       <Container>
         <Hero />
-
-        <div className="p-4 bg-white min-h-full">
-          <MenuSlider />
-        </div>
       </Container>
     </div>
   );

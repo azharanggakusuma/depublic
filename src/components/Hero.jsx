@@ -7,7 +7,7 @@ import MenuSlider from "./MenuSlider";
 
 function Hero() {
   return (
-    <div className="p-4 mt-16 bg-survece-500">
+    <div className="lg:pr-4 pl-4 pt-4 pb-4 mt-16 bg-survece-500">
       <div className="mt-4 relative">
         <input
           type="text"
@@ -37,7 +37,7 @@ function Hero() {
           />
         </div>
       </div>
-      
+
       <div className="-mt-16 relative mb-5">
         <MenuSlider />
       </div>
