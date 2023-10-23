@@ -4,7 +4,7 @@ import Home from "./components/Home";
 
 function App() {
   return (
-    <div className="h-container bg-gray-500">
+    <div className="h-container bg-gray-300">
       <Home />
     </div>
   );

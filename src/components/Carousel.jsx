@@ -46,14 +46,12 @@ function Carousel() {
     <div className="">
       <style>
         {`
-          /* Sembunyikan tombol panah */
           .slick-prev, .slick-next {
             display: none !important;
           }
 
-          /* Ketinggian gambar yang berada di tengah */
           .center-image {
-            height: 250px; /* Sesuaikan ketinggian yang Anda inginkan */
+            height: 250px;
           }
         `}
       </style>

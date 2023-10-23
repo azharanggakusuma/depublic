@@ -1,9 +1,10 @@
 /* eslint-disable no-unused-vars */
-import react from "react";
+import React from "react";
 import Navbar from "./Navbar";
 import Container from "./Container";
 import Hero from "./Hero";
 import Carousel from "./Carousel";
+import Divider from "./Divider";
 
 function Home() {
   return (
@@ -12,9 +13,14 @@ function Home() {
 
       <Container>
         <Hero />
+        <Divider />
         <div className="relative bg-white">
           <Carousel />
-          <br /><br /><br /><br /><br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
         </div>
       </Container>
     </div>
