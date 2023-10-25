@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import image1 from "../assets/img/carousel/image-1.png";
 import image2 from "../assets/img/carousel/image-2.png";
+import location from "../assets/img/icon/location.png";
 
 function CarouselCard() {
   const sliderRef = useRef(null);
@@ -34,7 +35,7 @@ function CarouselCard() {
   const cards = [
     {
       image: image1,
-      location: "Bandung",
+      location: "CIREBON",
       date: "12 June, 2023",
       title: "Judul Event 1",
       description:
@@ -45,7 +46,7 @@ function CarouselCard() {
     },
     {
       image: image2,
-      location: "Bandung",
+      location: "CIREBON",
       date: "5 July, 2023",
       title: "Judul Event 2",
       description:
@@ -56,7 +57,7 @@ function CarouselCard() {
     },
     {
       image: image1,
-      location: "Bandung",
+      location: "CIREBON",
       date: "20 September, 2023",
       title: "Judul Event 3",
       description:
@@ -78,15 +79,17 @@ function CarouselCard() {
   return (
     <div>
       <div className="p-4 flex justify-between items-center">
-        <h2 className="text-xl font-semibold">Upcoming Events</h2>
-        <div className="flex items-center space-x-5">
+        <h2 className="text-xl font-semibold text-tertiary-900">
+          Upcoming Events
+        </h2>
+        <div className="flex items-center space-x-8">
           <button onClick={goToPrevSlide}>
             <FontAwesomeIcon icon={faChevronLeft} />
           </button>
           <button onClick={goToNextSlide}>
             <FontAwesomeIcon icon={faChevronRight} />
           </button>
-          <button className="text-black">See All</button>
+          <button className="text-tertiary-500">See All</button>
         </div>
       </div>
 
@@ -117,25 +120,28 @@ function CarouselCard() {
               </div>
 
               <div className="px-6 py-4">
-                <div className="text-md mb-2">
-                  <FontAwesomeIcon icon={faMapMarker} className="" />{" "}
-                  <span className="text-neutral-500">{card.location}</span> |{" "}
+                <div className="text-sm mb-2 flex items-center">
+                  <img src={location} alt="location" className="mr-1" />
+                  <span className="text-neutral-500">{card.location}</span>
+                  <span className="mx-2 text-neutral-500">|</span>
                   <span className="text-primary-500">{card.date}</span>
                 </div>
-                <div className="font-semibold text-primary-900 text-xl my-2">{card.title}</div>
+                <div className="font-semibold text-primary-900 text-xl my-2">
+                  {card.title}
+                </div>
                 <p className="text-tertiary-300 text-sm">{card.description}</p>
                 <div className="text-xl my-2 mb-5">
                   <span className="text-primary-500 font-bold ">
                     {card.price}
                   </span>{" "}
-                  <span className="text-gray-400">{card.person}</span>
+                  <span className="text-tertiary-500">{card.person}</span>
                 </div>
                 {card.available ? (
-                  <button className="w-full mx-auto bg-success-50 hover:bg-success-100 text-success-900 hover:text-green-600 py-2 px-4 rounded-full">
+                  <button className="w-full mx-auto bg-success-50 hover:bg-success-200 text-success-900 hover:text-success-600 transition duration-300 py-2 px-4 rounded-full">
                     Tersedia
                   </button>
                 ) : (
-                  <button className="w-full mx-auto bg-success-50 hover:bg-success-100 text-red-900 hover:text-red-600 py-2 px-4 rounded-full">
+                  <button className="w-full mx-auto bg-danger-100 hover:bg-danger-200 text-danger-900 hover:text-danger-600 transition duration-300 py-2 px-4 rounded-full">
                     Tidak Tersedia
                   </button>
                 )}
