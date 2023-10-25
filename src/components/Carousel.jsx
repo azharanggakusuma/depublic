@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick-theme.css";
 import image1 from "../assets/img/carousel/image-1.png";
 import image2 from "../assets/img/carousel/image-2.png";
 
+import CarouselCard from "./CarouselCard";
+
 function Carousel() {
   const [activeIndex, setActiveIndex] = useState(0);
   const image2Ref = useRef(null);
@@ -43,7 +45,7 @@ function Carousel() {
   };
 
   return (
-    <div className="">
+    <div>
       <style>
         {`
           .slick-prev, .slick-next {

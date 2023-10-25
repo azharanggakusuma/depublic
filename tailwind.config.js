@@ -19,9 +19,15 @@ export default {
       },
       height: {
         "hero-image": "400px",
-        container: "200vh",
+        container: "400vh",
       },
       backgroundColor: {
+        "primary-500": "#A103D3",
+        "primary-700": "#6B028D",
+        "survace-200": "#FAFAFA",
+        "survece-500": "#FDF9F0",
+      },
+      textColor: {
         "primary-500": "#A103D3",
         "primary-700": "#6B028D",
         "survace-200": "#FAFAFA",
@@ -30,11 +36,13 @@ export default {
       borderColor: {
         "primary-500": "#A103D3",
         "primary-700": "#6B028D",
+        "survace-200": "#FAFAFA",
+        "survece-500": "#FDF9F0",
       },
       borderWidth: {
         2: "2px",
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [],
 };
