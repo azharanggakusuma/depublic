@@ -23,8 +23,8 @@ function CarouselCard() {
   };
 
   const cardStyle = {
-    width: "370px", 
-    height: "370px", 
+    width: "360px", 
+    height: "360px", 
   };
 
   const imageStyle = {
@@ -34,33 +34,33 @@ function CarouselCard() {
   const cards = [
     {
       image: image1,
-      location: "Mountain Peak",
+      location: "Bandung",
       date: "12 June, 2023",
-      title: "Hiking Adventure",
+      title: "Judul Event 1",
       description:
-        "Join us for an exciting hiking adventure to the Mountain Peak. Explore the breathtaking views and enjoy.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sapiente adipisci corporis ipsum qui provident magnam iure repellat nulla quis.",
       price: "IDR 1.999.000",
       person: "/1 Person",
       available: true,
     },
     {
       image: image2,
-      location: "Riverfront",
+      location: "Bandung",
       date: "5 July, 2023",
-      title: "River Rafting",
+      title: "Judul Event 2",
       description:
-        "Experience the thrill of river rafting on the roaring river. An unforgettable adventure for water enthusiasts.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sapiente adipisci corporis ipsum qui provident magnam iure repellat nulla quis.",
       price: "IDR 1.999.000",
       person: "/1 Person",
       available: false,
     },
     {
       image: image1,
-      location: "Deep Forest",
+      location: "Bandung",
       date: "20 September, 2023",
-      title: "Forest Trek",
+      title: "Judul Event 3",
       description:
-        "Embark on a forest trek through the lush greenery and discover the wonders of the deep forest.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sapiente adipisci corporis ipsum qui provident magnam iure repellat nulla quis.",
       price: "IDR 1.999.000",
       person: "/1 Person",
       available: true,
@@ -95,7 +95,7 @@ function CarouselCard() {
           <div
             key={index}
             style={cardStyle}
-            className="grid grid-cols-1 gap-5 p-4 -mt-6"
+            className="grid grid-cols-1 gap-5 p-2 -mt-6"
           >
             <div
               className="rounded shadow-lg"
@@ -119,11 +119,11 @@ function CarouselCard() {
               <div className="px-6 py-4">
                 <div className="text-md mb-2">
                   <FontAwesomeIcon icon={faMapMarker} className="" />{" "}
-                  <span>{card.location}</span> |{" "}
+                  <span className="text-neutral-500">{card.location}</span> |{" "}
                   <span className="text-primary-500">{card.date}</span>
                 </div>
-                <div className="font-bold text-2xl my-2">{card.title}</div>
-                <p className="text-gray-700 text-sm">{card.description}</p>
+                <div className="font-semibold text-primary-900 text-xl my-2">{card.title}</div>
+                <p className="text-tertiary-300 text-sm">{card.description}</p>
                 <div className="text-xl my-2 mb-5">
                   <span className="text-primary-500 font-bold ">
                     {card.price}
@@ -131,11 +131,11 @@ function CarouselCard() {
                   <span className="text-gray-400">{card.person}</span>
                 </div>
                 {card.available ? (
-                  <button className="w-full mx-auto bg-gray-300 hover:bg-gray-400 text-green-500 hover:text-green-600 font-semibold py-2 px-4 rounded-full">
+                  <button className="w-full mx-auto bg-success-50 hover:bg-success-100 text-success-900 hover:text-green-600 py-2 px-4 rounded-full">
                     Tersedia
                   </button>
                 ) : (
-                  <button className="w-full mx-auto bg-gray-300 hover:bg-gray-400 text-red-500 hover:text-red-600 font-semibold py-2 px-4 rounded-full">
+                  <button className="w-full mx-auto bg-success-50 hover:bg-success-100 text-red-900 hover:text-red-600 py-2 px-4 rounded-full">
                     Tidak Tersedia
                   </button>
                 )}
