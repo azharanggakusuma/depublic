@@ -2,6 +2,12 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import FontAwesome
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons"; // Import icon
+
 import imageTicket from "../assets/img/slider_menu/ticket.png";
 import imageRegistration from "../assets/img/slider_menu/registration.png";
 import imageBooking from "../assets/img/slider_menu/booking.png";
@@ -22,6 +28,8 @@ const MenuSlider = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: initialSlide,
+    prevArrow: <SamplePrevArrow />,
+    nextArrow: <SampleNextArrow />,
   };
 
   const menuItems = [
@@ -62,8 +70,36 @@ const MenuSlider = () => {
     },
   ];
 
+  function SamplePrevArrow(props) {
+    const { onClick } = props;
+    return (
+      <div
+        className="slick-arrow slick-arrow-left absolute left-0 top-1/2 transform -translate-y-1/2 cursor-pointer"
+        onClick={onClick}
+      >
+        <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center -ml-8">
+          <FontAwesomeIcon icon={faChevronLeft} />
+        </div>
+      </div>
+    );
+  }
+
+  function SampleNextArrow(props) {
+    const { onClick } = props;
+    return (
+      <div
+        className="slick-arrow slick-arrow-right absolute right-0 top-1/2 transform -translate-y-1/2 cursor-pointer"
+        onClick={onClick}
+      >
+        <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center -mr-8">
+          <FontAwesomeIcon icon={faChevronRight} />
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className="bg-white p-4 rounded-lg shadow-lg">
+    <div className="bg-white p-4 rounded-lg shadow-md mx-auto">
       <Slider {...settings}>
         {menuItems.map((item, index) => (
           <div key={index} className="text-center">
