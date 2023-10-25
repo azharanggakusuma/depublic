@@ -21,6 +21,8 @@ function CarouselCard() {
     slidesToScroll: 1,
     centerMode: true,
     variableWidth: true,
+    swipeToSlide: true,
+    draggable: true,
   };
 
   const cardStyle = {
