@@ -23,12 +23,12 @@ function CarouselCard() {
   };
 
   const cardStyle = {
-    width: "400px", 
-    height: "400px", 
+    width: "370px", 
+    height: "370px", 
   };
 
   const imageStyle = {
-    height: "200px",
+    height: "150px",
   };
 
   const cards = [
@@ -38,7 +38,7 @@ function CarouselCard() {
       date: "12 June, 2023",
       title: "Hiking Adventure",
       description:
-        "Join us for an exciting hiking adventure to the Mountain Peak. Explore the breathtaking views and enjoy the fresh mountain air.",
+        "Join us for an exciting hiking adventure to the Mountain Peak. Explore the breathtaking views and enjoy.",
       price: "IDR 1.999.000",
       person: "/1 Person",
       available: true,
