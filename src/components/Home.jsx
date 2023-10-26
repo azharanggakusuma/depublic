@@ -7,6 +7,7 @@ import Carousel from "./Carousel";
 import CarouselEvent from "./CarouselEvent";
 import CarouselBlog from "./CarouselBlog";
 import Divider from "./Divider";
+import Footer from "./Footer"; 
 
 function Home() {
   return (
@@ -29,9 +30,9 @@ function Home() {
             <br />
           </div>
           <br />
-          <br />
-          <br />
-          <br />
+          <div>
+            <Footer />
+          </div>
         </div>
       </Container>
     </div>
