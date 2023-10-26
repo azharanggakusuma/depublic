@@ -5,6 +5,7 @@ import Container from "./Container";
 import Hero from "./Hero";
 import Carousel from "./Carousel";
 import CarouselEvent from "./CarouselEvent";
+import CarouselBlog from "./CarouselBlog";
 import Divider from "./Divider";
 
 function Home() {
@@ -23,6 +24,10 @@ function Home() {
           </div>
           <Divider />
           <br />
+          <div>
+            <CarouselBlog />
+            <br />
+          </div>
           <br />
           <br />
           <br />
