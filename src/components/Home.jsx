@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import Container from "./Container";
 import Hero from "./Hero";
 import Carousel from "./Carousel";
-import CarouselCard from "./CarouselCard";
+import CarouselEvent from "./CarouselEvent";
 import Divider from "./Divider";
 
 function Home() {
@@ -18,7 +18,7 @@ function Home() {
         <div className="relative bg-white">
           <Carousel />
           <div className="mt-16">
-            <CarouselCard />
+            <CarouselEvent />
             <br />
           </div>
           <Divider />

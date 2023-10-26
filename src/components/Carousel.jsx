@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import image1 from "../assets/img/carousel/image-1.png";
 import image2 from "../assets/img/carousel/image-2.png";
 
-import CarouselCard from "./CarouselCard";
+import CarouselCard from "./CarouselEvent";
 
 function Carousel() {
   const [activeIndex, setActiveIndex] = useState(0);
