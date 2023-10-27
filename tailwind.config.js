@@ -19,7 +19,7 @@ export default {
       },
       height: {
         "hero-image": "400px",
-        container: "285vh",
+        container: "357vh",
       },
       backgroundColor: {
         "primary-50": "#F5F0F6",
