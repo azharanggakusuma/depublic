@@ -2,13 +2,11 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faMapMarker,
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import image1 from "../assets/img/carousel/image-1.png";
 import image2 from "../assets/img/carousel/image-2.png";
-import location from "../assets/img/icon/location.png";
 
 function CarouselBlog() {
   const sliderRef = useRef(null);
@@ -111,7 +109,6 @@ function CarouselBlog() {
 
               <div className="px-6 py-4">
                 <div className="text-sm mb-2 flex items-center">
-                  <img src={location} alt="location" className="mr-1" />
                   <span className="text-primary-500">{card.date}</span>
                 </div>
                 <div className="font-semibold text-primary-900 text-xl my-2">
